@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>TestNG:  SharingToWordpress</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>SharingToWordpress</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jun 11 18:31:55 IST 2014</td>
+</tr>
+<tr><td>Total time:</td><td>124 seconds (124156 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='3' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td width="30%"><b>Exception</b></td>
+</tr>
+<tr>
+<td title='com.sharethis.QAAutomation.OAuth.Sharing.SharingToWordpress.test_SharingToWordpress()'>test_SharingToWordpress<br/><b>Parameters:</b> 1, 0<br/>
+<a href="#Output-5338666" onClick='toggleBox("Output-5338666", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-5338666" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-5338666">
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stLaunch-Open Browser and launch Portal URL [PASS]</strong><br />Successfully launch Publishers Page.<br /><strong>Data used:</strong><br />{BrowserType=*firefox, Port=4444, WindowTitle=TODAY ONLY ALPS Mountaineering Camp Chair $44.73, URL=http://www.techbargains.com/news_displayItem.cfm/407558, Localhost=localhost}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stClickAndVerify-Function for click on element and verify up-coming element [PASS]</strong><br />Getting upcoming object successfully.<br /><strong>Data used:</strong><br />{targetXPath=css=span[class*='st_sharethis'] span.stButton, verifyXpath=css=div#outerContainer>h2#welcomeMsg}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stLaunchOauthWidget-Launch ShareThis OAuth Widget [PASS]</strong><br />OAuth Widget is Successfully launch.<br /><strong>Data used:</strong><br />{}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stClickAndVerify-Function for click on element and verify up-coming element [PASS]</strong><br />Getting upcoming object successfully.<br /><strong>Data used:</strong><br />{targetXPath=css= div#serviceCTAs.sts-cb div#services a#moreLink.widgetIcons, verifyXpath=css=div#outerContainer div#chicklets:not(.sts-dn)}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stVerifyObjects-Function for verification of objects [PASS]</strong><br />Getting corresponding object successfully.<br /><strong>Data used:</strong><br />{<div><strong>targetXPath0</strong></div>=css=div#outerContainer div#chicklets:not(.sts-dn)<div><strong> -- PASS</strong></div>}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stClickAndVerify-Function for click on element and verify up-coming element [PASS]</strong><br />Getting upcoming object successfully.<br /><strong>Data used:</strong><br />{targetXPath=css=div#outerContainer div#chicklets a#post_wordpress_link.wordpress, verifyXpath=css=div#outerContainer div#serviceCTAs.sts-cb a#cancelLink.sts-fr:not(.sts-dn)}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stClickAndVerify-Function for click on element and verify up-coming element [PASS]</strong><br />Not getting upcoming object successfully.<br /><strong>Data used:</strong><br />{targetXPath=css=div#outerContainer div#serviceCTAs.sts-cb, verifyXpath=css=div#outerContainer div#mainBody div#errorMsg:not(.sts-dn)}</div><br/>
+<div style =" background-color:#FDFF10;color:green;"><strong>ST_STM_05--->PASS</strong></div><br/>
+</div>
+</td>
+<td>124</td>
+<td></td>
+</tr>
+</table><p>
+</body>
+</html>

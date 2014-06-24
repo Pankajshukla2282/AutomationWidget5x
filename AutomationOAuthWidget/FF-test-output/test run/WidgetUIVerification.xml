@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="WidgetUIVerification" failures="0" tests="1" time="674.342" errors="0">
+  <properties/>
+  <testcase name="test_WidgetUIVerification" time="674.101" classname="com.sharethis.QAAutomation.oauthUIandFunctions.WidgetUIVerification"/>
+</testsuite>

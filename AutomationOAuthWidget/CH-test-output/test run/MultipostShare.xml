@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MultipostShare" failures="1" tests="1" time="1353.797" errors="0">
+  <properties/>
+  <testcase name="test_SharingToLinkedIn" time="1353.531" classname="com.sharethis.QAAutomation.OAuth.Sharing.MultipostShare">
+    <failure type="junit.framework.ComparisonFailure" message="null expected:&lt;[PASS]&gt; but was:&lt;[FAIL]&gt;">
+      <![CDATA[junit.framework.ComparisonFailure: null expected:<[PASS]> but was:<[FAIL]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.sharethis.QAAutomation.commonlib.STCommonLibrary.stVerifyObjects(STCommonLibrary.java:162)
+	at com.sharethis.QAAutomation.commonlib.STSharing.stFacebookSharingVerification(STSharing.java:237)
+	at com.sharethis.QAAutomation.OAuth.Sharing.MultipostShare.test_SharingToLinkedIn(MultipostShare.java:64)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

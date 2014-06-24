@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="WidgetOAuthSignInWithLinkedInAccount" failures="0" tests="1" time="158.295" errors="0">
+  <properties/>
+  <testcase name="test_OAuthSignInWithLinkedInAccount" time="158.295" classname="com.sharethis.QAAutomation.SignInWidget.WidgetOAuthSignInWithLinkedInAccount"/>
+</testsuite>

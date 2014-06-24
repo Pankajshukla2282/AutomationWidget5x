@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">SendEmailViaTwitterOauth</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">228.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
+<tr><th colspan="4">SendEmailViaTwitterOauth &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">com.sharethis.QAAutomation.OAuth.Email.SendEmailViaTwitterOauth<td><a href="#m1">test_SendEmailViaTwitterOauth</a></td><td class="numi">1</td><td class="numi">228428</td></tr>
+</table>
+<h1>SendEmailViaTwitterOauth</h1>
+<a id="m1"></a><h2>com.sharethis.QAAutomation.OAuth.Email.SendEmailViaTwitterOauth:test_SendEmailViaTwitterOauth</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th><th style="padding-left:1em;padding-right:1em">Parameter #4</th><th style="padding-left:1em;padding-right:1em">Parameter #5</th><th style="padding-left:1em;padding-right:1em">Parameter #6</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">1</td>
+<td style="padding-left:.5em;padding-right:2em">0</td>
+<td style="padding-left:.5em;padding-right:2em">19</td>
+<td style="padding-left:.5em;padding-right:2em">2</td>
+<td style="padding-left:.5em;padding-right:2em">13</td>
+<td style="padding-left:.5em;padding-right:2em">7</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="6">
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stLaunch-Open Browser and launch Portal URL [PASS]</strong><br />Successfully launch Publishers Page.<br /><strong>Data used:</strong><br />{BrowserType=*firefox, Port=4444, WindowTitle=TODAY ONLY ALPS Mountaineering Camp Chair $44.73, URL=http://www.techbargains.com/news_displayItem.cfm/407558, Localhost=localhost}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stClickAndVerify-Function for click on element and verify up-coming element [PASS]</strong><br />Getting upcoming object successfully.<br /><strong>Data used:</strong><br />{targetXPath=css=span[class*='st_sharethis'] span.stButton, verifyXpath=css=div#outerContainer>h2#welcomeMsg}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stLaunchOauthWidget-Launch ShareThis OAuth Widget [PASS]</strong><br />OAuth Widget is Successfully launch.<br /><strong>Data used:</strong><br />{}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stClick-Function for click on element [PASS]</strong><br />Getting corresponding object successfully.<br /><strong>Data used:</strong><br />{<div><strong>targetXPath</strong></div>=css=div#services a:nth-child(1) span.bigIcon<div><strong> -- PASS </strong></div>}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stVerifyObjects-Function for verification of objects [PASS]</strong><br />Getting corresponding object successfully.<br /><strong>Data used:</strong><br />{<div><strong>targetXPath0</strong></div>=css=div#emailAuthentication.hideNewEmail div.rightSection div#login-accounts a.oAuthService span.oTwitter<div><strong> -- PASS</strong></div>}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stVerifyObjects-Function for verification of objects [PASS]</strong><br />Getting corresponding object successfully.<br /><strong>Data used:</strong><br />{<div><strong>targetXPath0</strong></div>=css=div#bd div.auth form#oauth_form fieldset.sign-in div.row input#username_or_email.text<div><strong> -- PASS</strong></div>}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stVerifyObjects-Function for verification of objects [PASS]</strong><br />Getting corresponding object successfully.<br /><strong>Data used:</strong><br />{<div><strong>targetXPath0</strong></div>=css=h2#welcomeMsg p#welcomeName<div><strong> -- PASS</strong></div>}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stTwitterLoginEmailScreen-function is used to sign in as Twitter account through Email screen. [PASS]</strong><br />User is successfully signed in with Twitter Account on Email screen widget 5x.<br /><strong>Data used:</strong><br />{}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stVerifyObjects-Function for verification of objects [PASS]</strong><br />Getting corresponding object successfully.<br /><strong>Data used:</strong><br />{<div><strong>targetXPath1</strong></div>=css=form#shareDetails:not(sts-dn) textarea#shareMessage<div><strong> -- PASS</strong></div>, <div><strong>targetXPath2</strong></div>=css=div#emailShareDetails:not(.sts-dn) div#fromField input#txtFromAddr.text<div><strong> -- PASS</strong></div>, <div><strong>targetXPath3</strong></div>=css=a#shareButton.ctaButton<div><strong> -- PASS</strong></div>, <div><strong>targetXPath0</strong></div>=css=form#shareDetails div#emailShareDetails:not(.sts-dn) div#toField textarea#txtYourAddr.text<div><strong> -- PASS</strong></div>}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stComposeEmail-function is used to compose an email. [PASS]</strong><br />Email is composed Successfully.<br /><strong>Data used:</strong><br />{}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stVerifyObjects-Function for verification of objects [PASS]</strong><br />Getting corresponding object successfully.<br /><strong>Data used:</strong><br />{<div><strong>targetXPath0</strong></div>=css=a#shareButton.ctaButton<div><strong> -- PASS</strong></div>}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stClick-Function for click on element [PASS]</strong><br />Getting corresponding object successfully.<br /><strong>Data used:</strong><br />{<div><strong>targetXPath</strong></div>=css=a#shareButton.ctaButton<div><strong> -- PASS </strong></div>}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stSendOrCancelEmail-function is used to send or cancel email. [PASS]</strong><br />Email send Successfully.<br /><strong>Data used:</strong><br />{}</div><br/>
+<div style =" background-color:#FDFF10;color:green;"><strong>ST_ESM_26--->PASS</strong></div><br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

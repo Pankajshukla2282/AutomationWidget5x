@@ -1,0 +1,90 @@
+<testng-results>
+  <reporter-output>
+    <line>
+      <![CDATA[<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stLaunch-Open Browser and launch Portal URL [PASS]</strong><br />Successfully launch Publishers Page.<br /><strong>Data used:</strong><br />{BrowserType=*firefox, Port=4444, WindowTitle=TODAY ONLY ALPS Mountaineering Camp Chair $44.73, URL=http://www.techbargains.com/news_displayItem.cfm/407558, Localhost=localhost}</div>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stClickAndVerify-Function for click on element and verify up-coming element [PASS]</strong><br />Getting upcoming object successfully.<br /><strong>Data used:</strong><br />{targetXPath=css=span[class*='st_sharethis'] span.stButton, verifyXpath=css=div#outerContainer>h2#welcomeMsg}</div>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stLaunchOauthWidget-Launch ShareThis OAuth Widget [PASS]</strong><br />OAuth Widget is Successfully launch.<br /><strong>Data used:</strong><br />{}</div>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stClick-Function for click on element [PASS]</strong><br />Getting corresponding object successfully.<br /><strong>Data used:</strong><br />{<div><strong>targetXPath</strong></div>=css=div#services a:nth-child(1) span.bigIcon<div><strong> -- PASS </strong></div>}</div>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stVerifyObjects-Function for verification of objects [PASS]</strong><br />Getting corresponding object successfully.<br /><strong>Data used:</strong><br />{<div><strong>targetXPath0</strong></div>=css=div#emailAuthentication.hideNewEmail div.rightSection div#login-accounts a.oAuthService span.oTwitter<div><strong> -- PASS</strong></div>}</div>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stVerifyObjects-Function for verification of objects [PASS]</strong><br />Getting corresponding object successfully.<br /><strong>Data used:</strong><br />{<div><strong>targetXPath0</strong></div>=css=div#bd div.auth form#oauth_form fieldset.sign-in div.row input#username_or_email.text<div><strong> -- PASS</strong></div>}</div>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stVerifyObjects-Function for verification of objects [PASS]</strong><br />Getting corresponding object successfully.<br /><strong>Data used:</strong><br />{<div><strong>targetXPath0</strong></div>=css=h2#welcomeMsg p#welcomeName<div><strong> -- PASS</strong></div>}</div>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stTwitterLoginEmailScreen-function is used to sign in as Twitter account through Email screen. [PASS]</strong><br />User is successfully signed in with Twitter Account on Email screen widget 5x.<br /><strong>Data used:</strong><br />{}</div>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stVerifyObjects-Function for verification of objects [PASS]</strong><br />Getting corresponding object successfully.<br /><strong>Data used:</strong><br />{<div><strong>targetXPath1</strong></div>=css=form#shareDetails:not(sts-dn) textarea#shareMessage<div><strong> -- PASS</strong></div>, <div><strong>targetXPath2</strong></div>=css=div#emailShareDetails:not(.sts-dn) div#fromField input#txtFromAddr.text<div><strong> -- PASS</strong></div>, <div><strong>targetXPath3</strong></div>=css=a#shareButton.ctaButton<div><strong> -- PASS</strong></div>, <div><strong>targetXPath0</strong></div>=css=form#shareDetails div#emailShareDetails:not(.sts-dn) div#toField textarea#txtYourAddr.text<div><strong> -- PASS</strong></div>}</div>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stComposeEmail-function is used to compose an email. [PASS]</strong><br />Email is composed Successfully.<br /><strong>Data used:</strong><br />{}</div>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stVerifyObjects-Function for verification of objects [PASS]</strong><br />Getting corresponding object successfully.<br /><strong>Data used:</strong><br />{<div><strong>targetXPath0</strong></div>=css=a#shareButton.ctaButton<div><strong> -- PASS</strong></div>}</div>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stClick-Function for click on element [PASS]</strong><br />Getting corresponding object successfully.<br /><strong>Data used:</strong><br />{<div><strong>targetXPath</strong></div>=css=a#shareButton.ctaButton<div><strong> -- PASS </strong></div>}</div>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stSendOrCancelEmail-function is used to send or cancel email. [PASS]</strong><br />Email send Successfully.<br /><strong>Data used:</strong><br />{}</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div style =" background-color:#FDFF10;color:green;"><strong>ST_ESM_26--->PASS</strong></div>]]>
+    </line>
+  </reporter-output>
+  <suite name="test run">
+    <groups>
+    </groups>
+    <test name="SendEmailViaTwitterOauth">
+      <class name="com.sharethis.QAAutomation.OAuth.Email.SendEmailViaTwitterOauth">
+        <test-method status="PASS" signature="CloseBrowser()" name="CloseBrowser" is-config="true" duration-ms="1" started-at="2014-06-12T18:38:06Z" finished-at="2014-06-12T18:38:06Z">
+        </test-method>
+        <test-method status="PASS" signature="test_SendEmailViaTwitterOauth(int, int, int, int, int, int)" name="test_SendEmailViaTwitterOauth" duration-ms="228428" started-at="2014-06-12T18:34:17Z" finished-at="2014-06-12T18:38:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[19]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[13]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

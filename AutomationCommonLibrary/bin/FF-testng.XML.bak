@@ -1,0 +1,146 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="test run">
+
+	<test name="WidgetUIVerification">
+		<classes> 
+			<parameter name="STLBExpVal" value="0"/>
+			<parameter name="STBCDataID1" value="10"/>
+			<parameter name="STBCDataID2" value="11"/>
+			<parameter name="STLBDataID" value="1"/>
+			<class name="com.sharethis.QAAutomation.oauthUIandFunctions.WidgetUIVerification"/>
+		</classes> 
+	</test> 
+
+	<test name="WidgetCreateAccountWithInvalidCredentials">
+		<classes> 
+			<parameter name="STLBExpVal" value="0"/>
+			<parameter name="STRDataID" value="4"/>
+			<parameter name="STRExpVal" value="0"/>
+			<parameter name="STBCDataID" value="1"/>
+			<parameter name="STLBDataID" value="1"/>
+			<class name="com.sharethis.QAAutomation.createAccountUsingWidget.WidgetCreateAccountWithInvalidCredentials"/>
+		</classes> 
+	</test> 
+
+	<test name="WidgetCreateAccountWithValidCredentials">
+		<classes> 
+			<parameter name="STLBExpVal" value="0"/>
+			<parameter name="STRDataID" value="1"/>
+			<parameter name="STRExpVal" value="0"/>
+			<parameter name="STBCDataID" value="1"/>
+			<parameter name="STLBDataID" value="1"/>
+			<class name="com.sharethis.QAAutomation.createAccountUsingWidget.WidgetCreateAccountWithValidCredentials"/>
+		</classes> 
+	</test> 
+
+	<test name="WidgetSignInWithInvalidShareThisCredentials">
+		<classes> 
+			<parameter name="STLBExpVal" value="0"/>
+			<parameter name="STLDataID" value="2"/>
+			<parameter name="STLExpVal" value="-1"/>
+			<parameter name="STBCDataID" value="1"/>
+			<parameter name="STLBDataID" value="1"/>
+			<class name="com.sharethis.QAAutomation.SignInWidget.WidgetSignInWithInvalidShareThisCredentials"/>
+		</classes> 
+	</test> 
+
+	<test name="WidgetSignInWithValidShareThisCredentials">
+		<classes> 
+			<parameter name="STLBExpVal" value="0"/>
+			<parameter name="STLDataID" value="11"/>
+			<parameter name="STLExpVal" value="0"/>
+			<parameter name="STBCDataID" value="1"/>
+			<parameter name="STLBDataID" value="1"/>
+			<class name="com.sharethis.QAAutomation.SignInWidget.WidgetSignInWithValidShareThisCredentials"/>
+		</classes> 
+	</test> 
+
+	<test name="WidgetSignInWithGoogleAccount">
+		<classes> 
+			<parameter name="STLBExpVal" value="0"/>
+			<parameter name="STLDataID" value="4"/>
+			<parameter name="STLExpVal" value="0"/>
+			<parameter name="STBCDataID" value="1"/>
+			<parameter name="STLBDataID" value="1"/>
+			<class name="com.sharethis.QAAutomation.SignInWidget.WidgetSignInWithGoogleAccount"/>
+		</classes> 
+	</test> 
+
+	<test name="WidgetSignInWithFacebookAccount">
+		<classes> 
+			<parameter name="STLBExpVal" value="0"/>
+			<parameter name="STLDataID" value="3"/>
+			<parameter name="STLExpVal" value="2"/>
+			<parameter name="STBCDataID" value="1"/>
+			<parameter name="STLBDataID" value="1"/>
+			<class name="com.sharethis.QAAutomation.SignInWidget.WidgetSignInWithFacebookAccount"/>
+		</classes> 
+	</test> 
+
+	<test name="WidgetSignInWithTwitterAccount">
+		<classes> 
+			<parameter name="STLBExpVal" value="0"/>
+			<parameter name="STLDataID" value="5"/>
+			<parameter name="STLExpVal" value="2"/>
+			<parameter name="STBCDataID" value="1"/>
+			<parameter name="STLBDataID" value="1"/>
+			<class name="com.sharethis.QAAutomation.SignInWidget.WidgetSignInWithTwitterAccount"/>
+		</classes> 
+	</test> 
+
+	<test name="WidgetSignInWithLinkedinAccount">
+		<classes> 
+			<parameter name="STLBExpVal" value="0"/>
+			<parameter name="STLDataID" value="6"/>
+			<parameter name="STLExpVal" value="2"/>
+			<parameter name="STBCDataID" value="1"/>
+			<parameter name="STLBDataID" value="1"/>
+			<class name="com.sharethis.QAAutomation.SignInWidget.WidgetSignInWithLinkedinAccount"/>
+		</classes> 
+	</test> 
+
+	<test name="WidgetSignInWithYahooAccount">
+		<classes> 
+			<parameter name="STLBExpVal" value="0"/>
+			<parameter name="STLDataID" value="7"/>
+			<parameter name="STLExpVal" value="2"/>
+			<parameter name="STBCDataID" value="1"/>
+			<parameter name="STLBDataID" value="1"/>
+			<class name="com.sharethis.QAAutomation.SignInWidget.WidgetSignInWithYahooAccount"/>
+		</classes> 
+	</test> 
+
+	<test name="WidgetOAuthSignInWithFacebookAccount">
+		<classes> 
+			<parameter name="STLBExpVal" value="0"/>
+			<parameter name="STLDataID" value="3"/>
+			<parameter name="STLExpVal" value="0"/>
+			<parameter name="STBCDataID" value="12"/>
+			<parameter name="STLBDataID" value="1"/>
+			<class name="com.sharethis.QAAutomation.SignInWidget.WidgetOAuthSignInWithFacebookAccount"/>
+		</classes> 
+	</test> 
+
+	<test name="WidgetOAuthSignInWithTwitterAccount">
+		<classes> 
+			<parameter name="STLBExpVal" value="0"/>
+			<parameter name="STLDataID" value="5"/>
+			<parameter name="STLExpVal" value="0"/>
+			<parameter name="STBCDataID" value="13"/>
+			<parameter name="STLBDataID" value="1"/>
+			<class name="com.sharethis.QAAutomation.SignInWidget.WidgetOAuthSignInWithTwitterAccount"/>
+		</classes> 
+	</test> 
+
+	<test name="WidgetOAuthSignInWithLinkedInAccount">
+		<classes> 
+			<parameter name="STLBExpVal" value="0"/>
+			<parameter name="STLDataID" value="6"/>
+			<parameter name="STLExpVal" value="0"/>
+			<parameter name="STBCDataID" value="14"/>
+			<parameter name="STLBDataID" value="1"/>
+			<class name="com.sharethis.QAAutomation.SignInWidget.WidgetOAuthSignInWithLinkedInAccount"/>
+		</classes> 
+	</test> 
+
+</suite>

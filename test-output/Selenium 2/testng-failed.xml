@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="5" skipfailedinvocationCounts="false" verbose="1" name="Failed suite [Selenium 2]" junit="false" parallel="false" annotations="JDK">
+  <test name="com.sharethis.QAAutomation.oauthUIandFunctions.WidgetUIVerification(failed)" junit="false" parallel="false" annotations="JDK">
+    <classes>
+      <class name="com.sharethis.QAAutomation.oauthUIandFunctions.WidgetUIVerification">
+        <methods>
+          <include name="test_WidgetUIVerification"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

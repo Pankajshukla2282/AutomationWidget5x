@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="runAutomationOnFirefox" name="AutomationOAuthWidget">
+    <property environment="env"/>
+    <property name="AutomationCommonLibrary.location" value="../AutomationCommonLibrary"/>
+	<property name="AutomationOAuthWidget.jars.location" value="jars"/>
+	<property name="AutomationOAuthWidget.outputjar" value="${AutomationOAuthWidget.jars.location}/AutomationOAuthWidget.jar"/>
+	<property name="AutomationOAuthWidget.automationResult.location" value="test-output"/>
+	<!--<property name="AutomationReskinnedWidget.testngXML.path" value="src/testng.xml"/> -->
+              	
+              	<property name="AutomationOAuthWidget.FF-testngXML.path" value="src/FF-testng.XML"/>
+              	    
+              	<property name="AutomationOAuthWidget.CH-testngXML.path" value="src/CH-testng.XML"/>
+              	<property name="AutomationOAuthWidget.IE-testngXML.path" value="src/IE-testng.XML"/>
+              	<property name="AutomationOAuthWidget.SF-testngXML.path" value="src/SF-testng.XML"/> 
+              	
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <path id="SeleniumAutomationLib.userclasspath">
+        <pathelement location="../AutomationCommonLibrary/lib/junit-4.1.jar"/>
+        <pathelement location="../AutomationCommonLibrary/lib/org.testng.eclipse_5.8.0.1.jar"/>
+        <pathelement location="../AutomationCommonLibrary/lib/poi.jar"/>
+        <pathelement location="../AutomationCommonLibrary/lib/selenium-java-client-driver.jar"/>
+        <pathelement location="../AutomationCommonLibrary/lib/selenium-java-client-driver-sources.jar"/>
+        <pathelement location="../AutomationCommonLibrary/lib/selenium-java-client-driver-tests.jar"/>
+        <pathelement location="../AutomationCommonLibrary/lib/selenium-java-client-driver-test-sources.jar"/>
+        <pathelement location="../AutomationCommonLibrary/lib/selenium-server.jar"/>
+        <pathelement location="../AutomationCommonLibrary/lib/testng-5.7-jdk15.jar"/>
+        <pathelement location="../AutomationCommonLibrary/lib/testng-6.1.1.jar"/>
+    </path>
+    <path id="AutomationCommonLibrary.classpath">
+        <pathelement location="${AutomationCommonLibrary.location}/bin"/>
+        <path refid="SeleniumAutomationLib.userclasspath"/>
+    </path>
+    <path id="AutomationOAuthWidget.classpath">
+        <pathelement location="bin"/>
+        <path refid="SeleniumAutomationLib.userclasspath"/>
+        <path refid="AutomationCommonLibrary.classpath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src" excludes="**/*.launch, **/*.java"/>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall">
+        <ant antfile="${AutomationCommonLibrary.location}/build.xml" inheritAll="false" target="clean"/>
+    </target>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects">
+        <ant antfile="${AutomationCommonLibrary.location}/build.xml" inheritAll="false" target="build-project"/>
+    </target>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+		<echo message="Building Sources ..."/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="AutomationOAuthWidget.classpath"/>
+        </javac>
+		<echo message="Building Finished ..."/>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+	<target name="package" depends="build" >
+		<mkdir dir="jars"/>
+		<jar destfile="${AutomationOAuthWidget.outputjar}" basedir="bin" > </jar>
+		<echo message="Jar Created ${AutomationOAuthWidget.outputjar}"/>
+    </target>
+                  
+
+
+ <target name="runAutomationOnFirefox" depends="package" >
+		<echo message="Starting : Automation Run for OAuth Widget on Firefox..."/>
+        <java classname="org.testng.TestNG"  fork="true">
+            <classpath refid="AutomationOAuthWidget.classpath"></classpath>
+                <arg value="-D"/>
+                <arg value="${AutomationOAuthWidget.automationResult.location}"/>
+                <arg value="${AutomationOAuthWidget.FF-testngXML.path}"/>
+        </java>
+   	
+   		<mkdir dir="FF-test-output"/>
+   	        <copy todir="FF-test-output">
+   	            <fileset dir="test-output"/>
+   	    </copy>
+
+		<echo message="Finished : Automation Run for OAuth Widget on Firefox..."/>		
+    </target> 
+          	
+              	 <!--
+
+ <target name="runAutomationOnChrome" depends="package" >
+        <echo message="Starting : Automation Run for OAuth Widget on Chrome..."/>
+        <java classname="org.testng.TestNG"  fork="true">
+            <classpath refid="AutomationOAuthWidget.classpath"></classpath>
+              	 <arg value="-D"/>
+              	 <arg value="${AutomationOAuthWidget.automationResult.location}"/>
+              	 <arg value="${AutomationOAuthWidget.CH-testngXML.path}"/>
+        </java>
+    
+    <mkdir dir="CH-test-output"/>
+       <copy todir="CH-test-output">
+       <fileset dir="test-output"/>
+       </copy>
+
+  	<echo message="Finished : Automation Run for OAuth Widget on Chrome..."/>		
+    </target>
+              	
+            	
+              	<target name="runAutomationonie" depends="runAutomationonchrome" >
+              	        <echo message="Starting : Automation Run for Reskinned Widget on IE..."/>
+              	        <java classname="org.testng.TestNG"  fork="true">
+              	            <classpath refid="AutomationReskinnedWidget.classpath"></classpath>
+              	              	 <arg value="-D"/>
+              	              	 <arg value="${AutomationReskinnedWidget.automationResult.location}"/>
+              	              	 <arg value="${AutomationReskinnedWidget.IE-testngXML.path}"/>
+              	        </java>
+              	    
+              	    <mkdir dir="IE-test-output"/>
+              	       <copy todir="IE-test-output">
+              	       <fileset dir="test-output"/>
+              	       </copy>
+
+              	  	<echo message="Finished : Automation Run for Reskinned Widget on IE..."/>		
+              	    </target>
+              	
+            	<target name="runAutomation" depends="runAutomationonie" >
+              	        <echo message="Starting : Automation Run for Reskinned Widget on Safari..."/>
+              	        <java classname="org.testng.TestNG"  fork="true">
+              	            <classpath refid="AutomationReskinnedWidget.classpath"></classpath>
+              	              	 <arg value="-D"/>
+              	              	 <arg value="${AutomationReskinnedWidget.automationResult.location}"/>
+              	              	 <arg value="${AutomationReskinnedWidget.SF-testngXML.path}"/>
+              	        </java>
+              	    
+              	    <mkdir dir="SF-test-output"/>
+              	       <copy todir="SF-test-output">
+              	       <fileset dir="test-output"/>
+              	       </copy>
+
+              	  	<echo message="Finished : Automation Run for Reskinned Widget on Safari..."/>		
+              	    </target>
+-->
+ 
+
+              	
+
+</project>

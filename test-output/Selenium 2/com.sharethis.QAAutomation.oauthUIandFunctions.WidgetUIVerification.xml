@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sharethis.QAAutomation.oauthUIandFunctions.WidgetUIVerification" failures="1" tests="1" time="0.5" errors="0">
+  <properties/>
+  <testcase name="@AfterTest CloseBrowser" time="0.0" classname="com.sharethis.QAAutomation.oauthUIandFunctions.WidgetUIVerification">
+    <failure type="java.lang.NullPointerException">
+      <![CDATA[java.lang.NullPointerException
+	at com.sharethis.QAAutomation.commonlib.STCommonLibrary.stTearDown(STCommonLibrary.java:62)
+	at com.sharethis.QAAutomation.oauthUIandFunctions.WidgetUIVerification.CloseBrowser(WidgetUIVerification.java:245)
+... Removed 19 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="test_WidgetUIVerification" time="0.0" classname="com.sharethis.QAAutomation.oauthUIandFunctions.WidgetUIVerification">
+    <failure type="org.testng.TestNGException" message="
+Parameter &apos;STLBDataID&apos; is required by @Test on method test_WidgetUIVerification
+but has not been marked @Optional or defined in E:\Git 5x\Selenium 2\temp-testng-customsuite.xml">
+      <![CDATA[org.testng.TestNGException: 
+Parameter 'STLBDataID' is required by @Test on method test_WidgetUIVerification
+but has not been marked @Optional or defined in E:\Git 5x\Selenium 2\temp-testng-customsuite.xml
+... Removed 20 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

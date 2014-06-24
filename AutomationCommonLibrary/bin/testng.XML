@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="test run">
+
+	<test name="WidgetLaunchVerification">
+		<classes> 
+			<parameter name="STLBDataID" value="1"/>
+			<parameter name="STLBExpVal" value="0"/>
+			<class name="com.sharethis.QAAutomation.Reskinned.WidgetLaunchVerification"/>
+		</classes> 
+	</test> 
+
+</suite>

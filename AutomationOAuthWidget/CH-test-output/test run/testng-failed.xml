@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="5" skipfailedinvocationCounts="false" verbose="1" name="Failed suite [test run]" junit="false" annotations="JDK">
+  <parameter name="STLBDataID" value="2"/>
+  <parameter name="STRExpVal" value="0"/>
+  <parameter name="STLBExpVal" value="0"/>
+  <parameter name="STBCDataID" value="1"/>
+  <parameter name="STRDataID" value="5"/>
+  <test name="WidgetCreateAccountWithInvalidCredentials(failed)" junit="false" annotations="JDK">
+    <parameter name="STLBDataID" value="2"/>
+    <parameter name="STLBExpVal" value="0"/>
+    <parameter name="STRExpVal" value="0"/>
+    <parameter name="STBCDataID" value="1"/>
+    <parameter name="STRDataID" value="5"/>
+    <classes>
+      <class name="com.sharethis.QAAutomation.createAccountUsingWidget.WidgetCreateAccountWithInvalidCredentials">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="test_WidgetCreateAccountWithInvalidEmail"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

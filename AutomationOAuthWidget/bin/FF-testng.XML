@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="test run">
+
+	<test name="SendEmailViaTwitterOauth">
+		<classes> 
+			<parameter name="STLBExpVal" value="0"/>
+			<parameter name="STLDataID" value="19"/>
+			<parameter name="STLExpVal" value="2"/>
+			<parameter name="STEDataID" value="7"/>
+			<parameter name="STBCDataID" value="13"/>
+			<parameter name="STLBDataID" value="1"/>
+			<class name="com.sharethis.QAAutomation.OAuth.Email.SendEmailViaTwitterOauth"/>
+		</classes> 
+	</test> 
+
+</suite>

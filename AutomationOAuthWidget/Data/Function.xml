@@ -1,0 +1,412 @@
+<DataTable>
+	<stLaunch>
+		<Description>Open Browser and launch Portal URL</Description>
+		<Var>IEPATH,URL</Var>
+		<Val1>Publisher page is not appearing.</Val1>
+		<Val0>Successfully launch Publishers Page.</Val0>
+	</stLaunch>
+	
+	<stLaunchWidget>
+		<Description>Launch ShareThis Widget</Description>
+		<Var>IEPATH,URL</Var>
+		<Val1>Unable to Launch Widget.</Val1>
+		<Val0>Widget is Successfully launch.</Val0>
+	</stLaunchWidget>
+	
+	<stLaunchOauthWidget>
+		<Description>Launch ShareThis OAuth Widget</Description>
+		<Var>IEPATH,URL</Var>
+		<Val1>Unable to Launch OAuth Widget.</Val1>
+		<Val0>OAuth Widget is Successfully launch.</Val0>
+	</stLaunchOauthWidget>
+	
+	<stClick>
+		<Description>Function for click on element</Description>
+		<Val1>Not getting corresponding object successfully.</Val1>
+		<Val0>Getting corresponding object successfully.</Val0>
+	</stClick>
+	
+	<stVerifyObjects>
+		<Description>Function for verification of objects</Description>
+		<Val1>Not getting corresponding object successfully.</Val1>
+		<Val0>Getting corresponding object successfully.</Val0>
+	</stVerifyObjects>
+
+	<stClickAndVerify>
+		<Description>Function for click on element and verify up-coming element</Description>
+		<Val1>Not getting upcoming object successfully.</Val1>	
+		<Val0>Getting upcoming object successfully.</Val0>
+	</stClickAndVerify>
+	
+	<stSetSearchOption>
+		<Description>Function for Set the search option</Description>
+		<Val1>Failed to select Twitter service.</Val1>	
+		<Val2>Failed to select Facebook service.</Val2>	
+		<Val3>Failed to select LinkedIn service.</Val3>	
+		<Val4>Failed to select Pinterest service.</Val4>
+		<Val5>Failed to select StumbleUpon service.</Val5>		
+		<Val0>Service got selected successfully.</Val0>
+	</stSetSearchOption>
+	
+	<stLogin>
+		<Description>Function for login.</Description>
+		<Val3>An invalid request was made.</Val3>	
+		<Val0>Successfully able to login in HTML version of ZimbraComcast.</Val0>
+		<Val1>Successfully able to login in Ajax version of ZimbraComcast.</Val1>
+		<Val2>The username or password is incorrect. Verify that CAPS LOCK is not on, and then retype the current username and password.</Val2>
+	</stLogin>
+
+	<stLogOut>
+		<Description>Function for logout</Description>
+		<Val1>Unable to logout successfully as login page is not appearing.</Val1>		
+		<Val0>Logout Successful.</Val0>
+	</stLogOut>	
+
+	<stClickOnTab>
+        <Description>Function for clicking on Tabs</Description>
+        <Val0>Tab open successfully</Val0>  
+        <Val1>Unable to open Tab</Val1>
+    </stClickOnTab>
+    
+    <stClickAndVerifyLink>
+		<Description>function is used for clicking on target and verify the opened window's URL</Description>
+		<Val-2>URL is Matching.</Val-2>	
+		<Val-1>Target link is not present.</Val-1>	
+		<Val0>Target link is open in new window and url is matching successfully.</Val0>
+		<Val1>Target link is open in new window but url is  not matching.</Val1>
+		<Val2>Target link is open in new window but title is not matching.</Val2>
+		<Val3>Target link is not open in new window.</Val3>
+	</stClickAndVerifyLink>
+	
+	<stClickonRegister>
+		<Description>function is used to Create Account and verification of registration.</Description>
+		<Val-4>Undefined error.</Val-4>
+		<Val-3>Password should be 6 characters long</Val-3>
+		<Val-2>Email Address is not Valid</Val-2>
+		<Val-1>Account is already Registered.</Val-1>	
+		<Val0>Account is created successfully.</Val0>
+		<Val1>Email,Password and confirm password fields are not present</Val1>
+		<Val2>email address, password and confirm password fields are required.</Val2>
+		<Val3>Failed to create new account.</Val3>
+		<Val4>Password and confirm password does not match</Val4>
+		<Val5>Password field is required</Val5>
+		<Val6>Confirm Password field is required</Val6>
+		<Val7>Terms are not accepted.</Val7>
+		<Val8>Password length is less than 6 characters</Val8>
+		<Val-8>Passwords do not match and a valid error message appears on create account page</Val-8>
+	</stClickonRegister>
+	
+	<stRegistration>
+		<Description>function is used to fill the data in Registration page.</Description>
+		<Val0>Data is filled successfully in registration page.</Val0>
+		<Val1>Email,Password and confirm password fields are not present</Val1>
+		<Val2>Failed to to fill data in registration page.</Val2>
+	</stRegistration>
+	
+	<stSharethisLogin>
+		<Description>function is used to sign in as Sharethis account.</Description>		
+		<Val-1>Email not found.</Val-1>
+		<Val-2>Invalid Username and Password.</Val-2>
+		<Val0>User is successfully signed in with Sharethis Account.</Val0>
+		<Val1>Username is Incorrect.</Val1>
+	</stSharethisLogin>
+	
+	<stFacebookLogin>
+		<Description>function is used to sign in as Facebook account.</Description>		
+		<Val-1>Incorrect Password.</Val-1>
+		<Val-2>Incorrect Username.</Val-2>
+		<Val0>User is successfully signed in with Facebook Account on Re-skinned Widget.</Val0>
+		<Val1>Username is Incorrect on Re-skinned widget.</Val1>
+		<Val2>User is successfully signed in with Facebook Account on OAuth Widget.</Val2>
+		<Val-3>Username is Incorrect on OAuth widget.</Val-3>
+	</stFacebookLogin>
+	
+	<stGoogleLogin>
+		<Description>function is used to sign in as Google account.</Description>		
+		<Val-1>Incorrect Password.</Val-1>
+		<Val-2>Incorrect Username.</Val-2>
+		<Val0>User is successfully signed in with Google Account.</Val0>
+		<Val1>Username is Incorrect.</Val1>
+	</stGoogleLogin>
+	
+	<stTwitterLogin>
+		<Description>function is used to sign in as Twitter account.</Description>		
+		<Val-1>Invalid Credentials.</Val-1>
+		<Val-2>Incorrect Username or Password.</Val-2>
+		<Val0>User is successfully signed in with Twitter Account on Re-skinned widget.</Val0>
+		<Val1>Username is Incorrect on Re-skinned widget.</Val1>
+		<Val2>User is successfully signed in with Twitter Account on OAuth Widget.</Val2>
+		<Val-3>Username is Incorrect on OAuth widget.</Val-3>
+	</stTwitterLogin>
+	
+	<stLinkedInLogin>
+		<Description>function is used to sign in as LinkedIn account.</Description>		
+		<Val-1>Invalid Credentials.</Val-1>
+		<Val-2>Incorrect Username or Password.</Val-2>
+		<Val0>User is successfully signed in with LinkedIn Account on Re-skinned widget.</Val0>
+		<Val1>Username is Incorrect on Re-skinned widget.</Val1>
+		<Val2>User is successfully signed in with LinkedIn Account on OAuth Widget.</Val2>
+		<Val-3>Username is Incorrect on OAuth widget.</Val-3>
+	</stLinkedInLogin>
+    
+    <stYahooLogin>
+            <Description>function is used to sign in as Yahoo account.</Description>            
+            <Val2>Password field blank.</Val2>
+            <Val-2>Invalid Username and Password.</Val-2>
+            <Val0>User is successfully signed in with Yahoo Account.</Val0>
+            <Val1>Username is Incorrect.</Val1>
+      </stYahooLogin>
+      
+      <stSharingToFacebook>
+            <Description>function is used to share the post on Facebook.</Description>            
+            <Val0>Sharing is done successfully on Facebook.</Val0>
+            <Val1>Failed to share.</Val1>
+      </stSharingToFacebook>
+      
+      <stSharingToTwitter>
+            <Description>function is used to share the post on Twitter.</Description>            
+            <Val0>Sharing is done successfully on Twitter.</Val0>
+            <Val1>Failed to share.</Val1>
+      </stSharingToTwitter>
+      
+      <stSharingToLinkedIn>
+            <Description>function is used to share the post on LinkedIn.</Description>            
+            <Val0>Sharing is done successfully on LinkedIn.</Val0>
+            <Val1>Failed to share.</Val1>
+      </stSharingToLinkedIn>
+      
+      <stFacebookSharingVerification>
+            <Description>function is used to verify the shared post on Facebook.</Description>            
+            <Val0>Sharing post is matching on Facebook.</Val0>
+            <Val1>Sharing post is NOT matching.</Val1>
+      </stFacebookSharingVerification>
+      
+      <stTwitterSharingVerification>
+            <Description>function is used to verify the shared post on Twitter.</Description>            
+            <Val0>Sharing post is matching on Twitter.</Val0>
+            <Val1>Sharing post is NOT matching.</Val1>
+      </stTwitterSharingVerification>
+      
+      <stLinkedInSharingVerification>
+            <Description>function is used to verify the shared post on LinkedIn.</Description>            
+            <Val0>Sharing post is matching on LinkedIn.</Val0>
+            <Val1>Sharing post is NOT matching.</Val1>
+      </stLinkedInSharingVerification>
+      
+       <stComposeEmail>
+            <Description>function is used to compose an email.</Description>            
+            <Val0>Email is composed Successfully.</Val0>
+            <Val1>Failed to compose email.</Val1>
+      </stComposeEmail>
+      
+      <stSendOrCancelEmail>
+            <Description>function is used to send or cancel email.</Description>            
+            <Val-2>To field is Invalid.</Val-2>
+            <Val-1>Invalid email address in from field.</Val-1>
+            <Val0>Email send Successfully.</Val0>
+            <Val1>Email Cancel Successfully.</Val1>
+            <Val2>Failed to Send or Cancel email.</Val2>
+            <Val3> Captcha appeared on Sending Email. </Val3>
+      </stSendOrCancelEmail>
+      
+      <stSendEmailWithCaptcha>
+            <Description>function is used to send email with Captcha.</Description> 
+            <Val0>Email send Successfully with Captcha.</Val0>
+            <Val1>Failed to Send email without Captcha.</Val1>
+      </stSendEmailWithCaptcha>
+      
+      <stGetSharingPlugin>
+            <Description>function is used to get sharing toolbar for various Browsers.</Description> 
+            <Val-1>Failed to get sharing toolbar for FF.</Val-1>
+            <Val-2>Failed to get sharing toolbar for Chrome.</Val-2>
+            <Val-3>Failed to get sharing toolbar for IE.</Val-3>
+            <Val-4>Failed to get sharing toolbar for Safari.</Val-4>
+            <Val1>Toolbar get Successfully for FF.</Val1>
+            <Val2>Toolbar get Successfully for Chrome.</Val2>
+            <Val3>Toolbar get Successfully for IE.</Val3>
+            <Val4>Toolbar get Successfully for Safari.</Val4>
+      </stGetSharingPlugin>
+
+	  <stOpenBrowserInstance>
+            <Description>function is used to open browser instance.</Description> 
+            <Val0>Browser Instance opens successfully.</Val0>
+            <Val1>Failed to open browser instance.</Val1>
+      </stOpenBrowserInstance>
+      
+      <stSharingViaFastShare>
+            <Description>function is used to share Via FastShare feature.</Description> 
+            <Val0>User is able to share via FastShare successfully.</Val0>
+            <Val1>Failed to share via FastShare.</Val1>
+      </stSharingViaFastShare>
+      
+      <stFillRegistrationForm>
+            <Description>Function is used to fill Registration form on Website</Description> 
+            <Val0>Data Filled in correctly in all the fields.</Val0>
+            <Val-1>Entered data is not same as desired data.</Val-1>
+      </stFillRegistrationForm>
+      
+        <stOAuthSignInFacebook>
+            <Description>Function is used to sign in to OAuth widget using Facebook </Description> 
+            <Val0>User is successfully signed in with FB Account.</Val0>
+            <Val1>Username is Incorrect.</Val1>
+            <Val-1>Username entered on FB sign in page is incorrect, could not sign in</Val-1>
+            <Val-2>Password entered on FB sign in page is incorrect, could not sign in</Val-2>
+      </stOAuthSignInFacebook>
+      
+      <stClickAndVerifyOAuthLink>
+      		<Description>Function is used verify OAuth links </Description> 
+			<Val-2>URL is Matching.</Val-2>	
+			<Val-1>Target link is not present.</Val-1>	
+			<Val0>Target link is open in new window and url is matching successfully.</Val0>
+			<Val1>Target link is open in new window but url is  not matching.</Val1>
+			<Val2>Target link is open in new window but title is not matching.</Val2>
+			<Val3>Target link is not open in new window.</Val3>
+			<Val4>Target link is opened and Title is matching </Val4>
+      </stClickAndVerifyOAuthLink>
+      
+      <stOAuthSignInTwitter>
+      <Description>function is used to sign in as Twitter account via OAuth.</Description>		
+		<Val-1>Invalid Credentials.</Val-1>
+		<Val-2>Incorrect Username or Password.</Val-2>
+		<Val0>User is successfully signed in with Twitter Account on OAuth widget.</Val0>
+		<Val1>Username is Incorrect on OAuth widget.</Val1>
+      </stOAuthSignInTwitter>
+      
+      <stOAuthLinkedinAccount>
+      	<Description>function is used to sign in as LinkedIn account via OAuth.</Description>	
+      	<Val-1>Invalid Credentials.</Val-1>
+		<Val-2>Incorrect Username or Password.</Val-2>
+		<Val0>User is successfully signed in with LinkedIn Account on OAuth widget.</Val0>
+		<Val1>Username is Incorrect on OAuth widget.</Val1>
+      </stOAuthLinkedinAccount>
+      
+      <stOpenDoneScreen> 
+        <Description>This function is used to click on a post and get to Done screen on 5x Widget.</Description>	
+      	<Val-1>Post link not present in the list of services on OAuth Widget</Val-1>
+      	<Val1>New window successfully closed. Done screen opened. </Val1>
+      	<Val0>New window closed but done screen not present on Widget</Val0>
+      	<Val2>Link clicked but no new window opened. </Val2>
+      </stOpenDoneScreen>
+      
+      <stVerifySharedToText>
+        <Description>This function is used to verify 'shared to' text on done screen of OAuth Widget.</Description>	
+      	<Val1>Shared to text is correct for Facebook share</Val1>
+      	<Val-1>Shared to text is incorrect for Facebook share</Val-1>
+      	<Val2>Shared to text is correct for Twitter share</Val2>
+      	<Val-2>Shared to text is incorrect for Twitter share</Val-2>
+      	<Val3>Shared to text is correct for LinkedIn share</Val3>
+      	<Val-3>Shared to text is incorrect for LinkedIn share</Val-3>
+      	<Val4>Shared to text is correct for Multipost(FB,Twitter,LinkedIn) share</Val4>
+      	<Val-4>Shared to text is incorrect for Multipost(FB,Twitter,LinkedIn) share</Val-4>
+      	<Val0>New window closed but done screen not present on Widget</Val0>
+      </stVerifySharedToText>
+      
+      <stSignOutOfOAuthWidget>
+      <Description>This function is used to sign out of OAuth Widget</Description>	
+      <Val1>Sign out successful on OAuth Widget</Val1>
+      <Val-2>Unknown error occurred on signing out</Val-2>
+      <Val0> Sign out link clicked, but sign in link was not present after sign out</Val0>
+      <Val-1>Sign out link not present on OAuth Widget</Val-1>
+      </stSignOutOfOAuthWidget>
+      
+      <stFacebookLoginEmailScreen>
+		<Description>function is used to sign in as Facebook account through Email screen.</Description>		
+		<Val-1>Incorrect Password.</Val-1>
+		<Val-2>Incorrect Username.</Val-2>
+		<Val0>User is successfully signed in with Facebook Account on Email screen widget 4x.</Val0>
+		<Val1>Username is Incorrect on Email screen widget 4x.</Val1>
+		<Val2>User is successfully signed in with Facebook Account on Email screen Widget 5x.</Val2>
+		<Val-3>Username is Incorrect on Email screen widget 5x.</Val-3>
+	 </stFacebookLoginEmailScreen>
+	 
+	 <stGoogleLoginEmailScreen>
+		<Description>function is used to sign in as Google account through Email screen.</Description>		
+		<Val-1>Incorrect Password.</Val-1>
+		<Val-2>Incorrect Username.</Val-2>
+		<Val0>User is successfully signed in with Google Account.</Val0>
+		<Val1>Username is Incorrect.</Val1>
+	</stGoogleLoginEmailScreen>
+	
+	<stTwitterLoginEmailScreen>
+		<Description>function is used to sign in as Twitter account through Email screen.</Description>		
+		<Val-1>Invalid Credentials.</Val-1>
+		<Val-2>Incorrect Username or Password.</Val-2>
+		<Val0>User is successfully signed in with Twitter Account on Email screen widget 4x.</Val0>
+		<Val1>Username is Incorrect on Email screen widget 4x.</Val1>
+		<Val2>User is successfully signed in with Twitter Account on Email screen widget 5x.</Val2>
+		<Val-3>Username is Incorrect on Email screen widget 5x.</Val-3>
+	</stTwitterLoginEmailScreen>
+	
+	<stLinkedInLoginEmailScreen>
+		<Description>function is used to sign in as LinkedIn account through Email screen.</Description>		
+		<Val-1>Invalid Credentials.</Val-1>
+		<Val-2>Incorrect Username or Password.</Val-2>
+		<Val0>User is successfully signed in with LinkedIn Account on Email screen widget 4x.</Val0>
+		<Val1>Username is Incorrect on Email screen widget 4xt.</Val1>
+		<Val2>User is successfully signed in with LinkedIn Account on Email screen widget 5x.</Val2>
+		<Val-3>Username is Incorrect on Email screen widget 5xt.</Val-3>
+	</stLinkedInLoginEmailScreen>
+    
+    <stYahooLoginEmailScreen>
+            <Description>function is used to sign in as Yahoo account through Email screen.</Description>            
+            <Val2>Password field blank.</Val2>
+            <Val-2>Invalid Username and Password.</Val-2>
+            <Val0>User is successfully signed in with Yahoo Account.</Val0>
+            <Val1>Username is Incorrect.</Val1>
+      </stYahooLoginEmailScreen>
+      
+      <stExternalEmailGoogleLogin>
+		<Description>function is used to sign in as Google account through Email screen.</Description>		
+		<Val-1>Incorrect Password.</Val-1>
+		<Val-2>Incorrect Username.</Val-2>
+		<Val0>User is successfully signed in with Google Account.</Val0>
+		<Val1>Username is Incorrect.</Val1>
+		<Val3>Unknown error occurred on Google Sign in page.</Val3>
+	 </stExternalEmailGoogleLogin>
+	 
+	 <stExternalEmailYahooLogin>
+		<Description>function is used to sign in as Yahoo account through Email screen.</Description>		
+		<Val-1>Incorrect Password.</Val-1>
+		<Val-2>Incorrect Username.</Val-2>
+		<Val0>User is successfully signed in with Yahoo Account.</Val0>
+		<Val1>Username is Incorrect.</Val1>
+		<Val3>Unknown error occurred on Yahoo Sign in page.</Val3>
+	 </stExternalEmailYahooLogin>
+	 
+	 <stExternalEmailOutlookLogin>
+		<Description>function is used to sign in as Outlook account through Email screen.</Description>		
+		<Val-1>Incorrect Password.</Val-1>
+		<Val-2>Incorrect Username.</Val-2>
+		<Val0>User is successfully signed in with Outlook Account.</Val0>
+		<Val1>Username is Incorrect.</Val1>
+		<Val3>Unknown error occurred on Outlook Sign in page.</Val3>
+	 </stExternalEmailOutlookLogin>
+	 
+	 <stComposeEmailForGmailEmailService>
+            <Description>function is used to compose an email for Gmail Email Services.</Description>            
+            <Val0>Email is composed Successfully for Google Service.</Val0>
+            <Val1>Failed to compose email for Google.</Val1>
+      </stComposeEmailForGmailEmailService>
+      
+       <stComposeEmailForYahooEmailService>
+            <Description>function is used to compose an email for Yahoo Email Services.</Description>            
+            <Val0>Email is composed Successfully for Yahoo Service.</Val0>
+            <Val1>Failed to compose email for Yahoo.</Val1>            
+      </stComposeEmailForYahooEmailService>
+      
+      <stComposeEmailForOutlookEmailService>
+            <Description>function is used to compose an email for Outlook Email Services.</Description>            
+            <Val0>Email is composed Successfully for Outlook Service.</Val0>
+            <Val1>Failed to compose email for Outlook.</Val1>            
+      </stComposeEmailForOutlookEmailService>
+	
+</DataTable>								
+
+
+
+
+
+
+
+
+

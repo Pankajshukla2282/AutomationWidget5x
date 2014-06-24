@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>TestNG:  SendEmailViaLinkedInOauth</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>SendEmailViaLinkedInOauth</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Sep 11 16:11:09 IST 2013</td>
+</tr>
+<tr><td>Total time:</td><td>219 seconds (219327 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='3' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td width="30%"><b>Exception</b></td>
+</tr>
+<tr>
+<td title='com.sharethis.QAAutomation.OAuth.Email.SendEmailViaLinkedInOauth.test_SendEmailViaLinkedInOauth()'>test_SendEmailViaLinkedInOauth<br/><b>Parameters:</b> 2, 0, 6, 2, 14, 3<br/>
+<a href="#Output-29147324" onClick='toggleBox("Output-29147324", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-29147324" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-29147324">
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stLaunch-Open Browser and launch Portal URL [PASS]</strong><br />Successfully launch Publishers Page.<br /><strong>Data used:</strong><br />{BrowserType=*googlechrome, Port=4444, WindowTitle=Bad Parking, URL=http://picaphobia.com/picture/873/bad-parking/, Localhost=localhost}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stClickAndVerify-Function for click on element and verify up-coming element [PASS]</strong><br />Getting upcoming object successfully.<br /><strong>Data used:</strong><br />{targetXPath=css=span[class*='st_sharethis'] span.stButton, verifyXpath=css=div#outerContainer>h2#welcomeMsg}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stLaunchOauthWidget-Launch ShareThis OAuth Widget [PASS]</strong><br />OAuth Widget is Successfully launch.<br /><strong>Data used:</strong><br />{}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stClick-Function for click on element [PASS]</strong><br />Getting corresponding object successfully.<br /><strong>Data used:</strong><br />{<div><strong>targetXPath</strong></div>=css=div#services a:nth-child(1) span.bigIcon<div><strong> -- PASS </strong></div>}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stVerifyObjects-Function for verification of objects [PASS]</strong><br />Getting corresponding object successfully.<br /><strong>Data used:</strong><br />{<div><strong>targetXPath0</strong></div>=//div/div[3]/div[2]/a[2]/img<div><strong> -- PASS</strong></div>}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stVerifyObjects-Function for verification of objects [PASS]</strong><br />Getting corresponding object successfully.<br /><strong>Data used:</strong><br />{<div><strong>targetXPath0</strong></div>=css=div#frame-contents div#body div.wrapper form.standard-form ul li.email-input div.fieldgroup input#session_key-oauthAuthorizeForm<div><strong> -- PASS</strong></div>}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stVerifyObjects-Function for verification of objects [PASS]</strong><br />Getting corresponding object successfully.<br /><strong>Data used:</strong><br />{<div><strong>targetXPath0</strong></div>=css=h2#welcomeMsg p#welcomeName<div><strong> -- PASS</strong></div>}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stLinkedInLoginEmailScreen-function is used to sign in as LinkedIn account through Email screen. [PASS]</strong><br />User is successfully signed in with LinkedIn Account on Email screen widget 5x.<br /><strong>Data used:</strong><br />{}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stVerifyObjects-Function for verification of objects [PASS]</strong><br />Getting corresponding object successfully.<br /><strong>Data used:</strong><br />{<div><strong>targetXPath1</strong></div>=css=form#shareDetails:not(sts-dn) textarea#shareMessage<div><strong> -- PASS</strong></div>, <div><strong>targetXPath2</strong></div>=css=div#emailShareDetails:not(.sts-dn) div#fromField input#txtFromAddr.text<div><strong> -- PASS</strong></div>, <div><strong>targetXPath3</strong></div>=css=a#shareButton.ctaButton<div><strong> -- PASS</strong></div>, <div><strong>targetXPath0</strong></div>=css=form#shareDetails div#emailShareDetails:not(.sts-dn) div#toField textarea#txtYourAddr.text<div><strong> -- PASS</strong></div>}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stComposeEmail-function is used to compose an email. [PASS]</strong><br />Email is composed Successfully.<br /><strong>Data used:</strong><br />{}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stVerifyObjects-Function for verification of objects [PASS]</strong><br />Getting corresponding object successfully.<br /><strong>Data used:</strong><br />{<div><strong>targetXPath0</strong></div>=css=a#shareButton.ctaButton<div><strong> -- PASS</strong></div>}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stClick-Function for click on element [PASS]</strong><br />Getting corresponding object successfully.<br /><strong>Data used:</strong><br />{<div><strong>targetXPath</strong></div>=css=a#shareButton.ctaButton<div><strong> -- PASS </strong></div>}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stSendOrCancelEmail-function is used to send or cancel email. [PASS]</strong><br />Email send Successfully.<br /><strong>Data used:</strong><br />{}</div><br/>
+<div style =" background-color:#FDFF10;color:green;"><strong>ST_ESM_30--->PASS</strong></div><br/>
+</div>
+</td>
+<td>219</td>
+<td></td>
+</tr>
+</table><p>
+</body>
+</html>

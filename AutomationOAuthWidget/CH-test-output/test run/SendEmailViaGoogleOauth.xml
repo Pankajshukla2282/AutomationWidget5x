@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SendEmailViaGoogleOauth" failures="0" tests="1" time="233.629" errors="0">
+  <properties/>
+  <testcase name="test_SendEmailViaGoogleOauth" time="233.614" classname="com.sharethis.QAAutomation.OAuth.Email.SendEmailViaGoogleOauth"/>
+</testsuite>

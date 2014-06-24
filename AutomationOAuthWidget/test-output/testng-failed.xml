@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="5" skipfailedinvocationCounts="false" verbose="1" name="Failed suite [test run]" junit="false" annotations="JDK">
+  <parameter name="STLBDataID" value="1"/>
+  <parameter name="STLDataID" value="19"/>
+  <parameter name="STLBExpVal" value="0"/>
+  <parameter name="STBCDataID" value="13"/>
+  <parameter name="STLExpVal" value="2"/>
+  <parameter name="STEDataID" value="3"/>
+  <test name="SendEmailViaTwitterOauth(failed)" junit="false" annotations="JDK">
+    <parameter name="STLDataID" value="19"/>
+    <parameter name="STLBDataID" value="1"/>
+    <parameter name="STLBExpVal" value="0"/>
+    <parameter name="STBCDataID" value="13"/>
+    <parameter name="STLExpVal" value="2"/>
+    <parameter name="STEDataID" value="3"/>
+    <classes>
+      <class name="com.sharethis.QAAutomation.OAuth.Email.SendEmailViaTwitterOauth">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="test_SendEmailViaTwitterOauth"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

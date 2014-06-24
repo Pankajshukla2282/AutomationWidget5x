@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SharingToLinkedIn" failures="1" tests="1" time="318.5" errors="0">
+  <properties/>
+  <testcase name="test_SharingToLinkedIn" time="318.125" classname="com.sharethis.QAAutomation.OAuth.Sharing.SharingToLinkedIn">
+    <failure type="junit.framework.ComparisonFailure" message="null expected:&lt;[PASS]&gt; but was:&lt;[FAIL]&gt;">
+      <![CDATA[junit.framework.ComparisonFailure: null expected:<[PASS]> but was:<[FAIL]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.sharethis.QAAutomation.commonlib.STCommonLibrary.stVerifyObjects(STCommonLibrary.java:162)
+	at com.sharethis.QAAutomation.commonlib.STSharing.stLinkedInSharingVerification(STSharing.java:873)
+	at com.sharethis.QAAutomation.OAuth.Sharing.SharingToLinkedIn.test_SharingToLinkedIn(SharingToLinkedIn.java:69)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

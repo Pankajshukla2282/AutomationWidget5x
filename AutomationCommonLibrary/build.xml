@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="AutomationCommonLibrary">
+    <property environment="env"/>
+    <property name="AutomationReskinnedWidget.location" value="../AutomationReskinnedWidget"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <path id="SeleniumAutomationLib.userclasspath">
+        <pathelement location="lib/junit-4.1.jar"/>
+        <pathelement location="lib/org.testng.eclipse_5.8.0.1.jar"/>
+        <pathelement location="lib/poi.jar"/>
+        <pathelement location="lib/selenium-java-client-driver.jar"/>
+        <pathelement location="lib/selenium-java-client-driver-sources.jar"/>
+        <pathelement location="lib/selenium-java-client-driver-tests.jar"/>
+        <pathelement location="lib/selenium-java-client-driver-test-sources.jar"/>
+        <pathelement location="lib/selenium-server.jar"/>
+        <pathelement location="lib/testng-5.7-jdk15.jar"/>
+        <pathelement location="lib/testng-6.1.1.jar"/>
+    </path>
+    <path id="AutomationCommonLibrary.classpath">
+        <pathelement location="bin"/>
+        <path refid="SeleniumAutomationLib.userclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src" excludes="**/*.launch, **/*.java"/>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="AutomationCommonLibrary.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects">
+        <ant antfile="${AutomationReskinnedWidget.location}/build.xml" inheritAll="false" target="clean"/>
+        <ant antfile="${AutomationReskinnedWidget.location}/build.xml" inheritAll="false" target="build"/>
+    </target>
+</project>

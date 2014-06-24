@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="EnableThroughOauthWidget" failures="1" tests="1" time="313.063" errors="0">
+  <properties/>
+  <testcase name="test_EnableThroughOauthWidget" time="312.782" classname="com.sharethis.QAAutomation.Reskinned.FastShare.EnableThroughOauthWidget">
+    <failure type="junit.framework.ComparisonFailure" message="null expected:&lt;PASS&gt; but was:&lt;null&gt;">
+      <![CDATA[junit.framework.ComparisonFailure: null expected:<PASS> but was:<null>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.sharethis.QAAutomation.commonlib.STLogin.stFacebookLogin(STLogin.java:388)
+	at com.sharethis.QAAutomation.Reskinned.FastShare.EnableThroughOauthWidget.test_EnableThroughOauthWidget(EnableThroughOauthWidget.java:67)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="EnableThroughOauthWidgetForLinkedIn" failures="1" tests="1" time="216.718" errors="0">
+  <properties/>
+  <testcase name="test_EnableThroughOauthWidgetForLinkedIn" time="216.437" classname="com.sharethis.QAAutomation.Reskinned.FastShare.EnableThroughOauthWidgetForLinkedIn">
+    <failure type="junit.framework.ComparisonFailure" message="null expected:&lt;[PASS]&gt; but was:&lt;[FAIL]&gt;">
+      <![CDATA[junit.framework.ComparisonFailure: null expected:<[PASS]> but was:<[FAIL]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.sharethis.QAAutomation.commonlib.STSharing.stSharingViaFastShare(STSharing.java:992)
+	at com.sharethis.QAAutomation.Reskinned.FastShare.EnableThroughOauthWidgetForLinkedIn.test_EnableThroughOauthWidgetForLinkedIn(EnableThroughOauthWidgetForLinkedIn.java:85)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

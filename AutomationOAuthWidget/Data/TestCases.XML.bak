@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EndResult>
+<UIDonescreen PASS="0" FAIL="0" SKIP="6">
+<SKIP>
+<ST_WUF_01/>
+<ST_WUF_02/>
+<ST_WUF_03/>
+<ST_WUF_04/>
+<ST_WUF_05/>
+<ST_WUF_06/>
+</SKIP>
+<PASS/>
+<FAIL/>
+</UIDonescreen>
+<SignIn PASS="0" FAIL="0" SKIP="0">
+<SKIP>
+</SKIP>
+<PASS/>
+<FAIL/>
+</SignIn>
+<Emailsharing PASS="0" FAIL="0" SKIP="0">
+<SKIP>
+</SKIP>
+<PASS/>
+<FAIL/>
+</Emailsharing>
+<Majorservicessharing PASS="0" FAIL="0" SKIP="0">
+<SKIP>
+</SKIP>
+<PASS/>
+<FAIL/>
+</Majorservicessharing>
+<Fastshare PASS="0" FAIL="0" SKIP="0">
+<SKIP>
+</SKIP>
+<PASS/>
+<FAIL/>
+</Fastshare>
+<Other PASS="0" FAIL="0" SKIP="0">
+<SKIP>
+</SKIP>
+<PASS/>
+<FAIL/>
+</Other>
+</EndResult>

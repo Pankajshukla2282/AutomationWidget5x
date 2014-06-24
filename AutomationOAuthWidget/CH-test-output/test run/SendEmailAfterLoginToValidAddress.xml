@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SendEmailAfterLoginToValidAddress" failures="1" tests="1" time="229.0" errors="0">
+  <properties/>
+  <testcase name="test_SendEmailAfterLoginToValidAddress" time="228.672" classname="com.sharethis.QAAutomation.OAuth.Email.SendEmailAfterLoginToValidAddress">
+    <failure type="junit.framework.ComparisonFailure" message="null expected:&lt;[PASS]&gt; but was:&lt;[FAIL]&gt;">
+      <![CDATA[junit.framework.ComparisonFailure: null expected:<[PASS]> but was:<[FAIL]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.sharethis.QAAutomation.commonlib.STCommonLibrary.stClickAndVerify(STCommonLibrary.java:111)
+	at com.sharethis.QAAutomation.OAuth.Email.SendEmailAfterLoginToValidAddress.test_SendEmailAfterLoginToValidAddress(SendEmailAfterLoginToValidAddress.java:95)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

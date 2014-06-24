@@ -1,0 +1,96 @@
+<testng-results>
+  <reporter-output>
+    <line>
+      <![CDATA[<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stLaunch-Open Browser and launch Portal URL [PASS]</strong><br />Successfully launch Publishers Page.<br /><strong>Data used:</strong><br />{BrowserType=*googlechrome, Port=4444, WindowTitle=Bad Parking, URL=http://picaphobia.com/picture/873/bad-parking/, Localhost=localhost}</div>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stClickAndVerify-Function for click on element and verify up-coming element [PASS]</strong><br />Getting upcoming object successfully.<br /><strong>Data used:</strong><br />{targetXPath=css=span[class*='st_sharethis'] span.stButton, verifyXpath=css=div#outerContainer>h2#welcomeMsg}</div>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stLaunchOauthWidget-Launch ShareThis OAuth Widget [PASS]</strong><br />OAuth Widget is Successfully launch.<br /><strong>Data used:</strong><br />{}</div>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stVerifyObjects-Function for verification of objects [PASS]</strong><br />Getting corresponding object successfully.<br /><strong>Data used:</strong><br />{<div><strong>targetXPath0</strong></div>=//*[@id='RegisterBtn']<div><strong> -- PASS</strong></div>}</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div style =" background-color:#FDFF10;color:red;"><strong>ST_CAW_03--->FAIL</strong></div>]]>
+    </line>
+  </reporter-output>
+  <suite name="test run">
+    <groups>
+    </groups>
+    <test name="WidgetCreateAccountWithInvalidCredentials">
+      <class name="com.sharethis.QAAutomation.createAccountUsingWidget.WidgetCreateAccountWithInvalidCredentials">
+        <test-method status="PASS" signature="CloseBrowser()" name="CloseBrowser" is-config="true" duration-ms="0" started-at="2013-10-18T16:10:43Z" finished-at="2013-10-18T16:10:43Z">
+        </test-method>
+        <test-method status="FAIL" signature="test_WidgetCreateAccountWithInvalidEmail(int, int, int, int, int)" name="test_WidgetCreateAccountWithInvalidEmail" duration-ms="168359" started-at="2013-10-18T16:07:54Z" finished-at="2013-10-18T16:10:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="junit.framework.AssertionFailedError">
+            <message>
+              <![CDATA[expected:<1> but was:<0>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError: expected:&lt;1&gt; but was:&lt;0&gt;
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:277)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:195)
+	at junit.framework.Assert.assertEquals(Assert.java:201)
+	at com.sharethis.QAAutomation.commonlib.STCommonLibrary.stTearDown(STCommonLibrary.java:64)
+	at com.sharethis.QAAutomation.createAccountUsingWidget.WidgetCreateAccountWithInvalidCredentials.test_WidgetCreateAccountWithInvalidEmail(WidgetCreateAccountWithInvalidCredentials.java:364)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:607)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:874)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:689)
+	at org.testng.TestRunner.privateRun(TestRunner.java:566)
+	at org.testng.TestRunner.run(TestRunner.java:466)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:301)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:296)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:276)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:191)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:808)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:776)
+	at org.testng.TestNG.run(TestNG.java:701)
+	at org.testng.TestNG.privateMain(TestNG.java:840)
+	at org.testng.TestNG.main(TestNG.java:818)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

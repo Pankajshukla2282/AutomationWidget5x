@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SharingToLinkedIn" failures="1" tests="1" time="179.187" errors="0">
+  <properties/>
+  <testcase name="test_SharingToLinkedIn" time="178.969" classname="com.sharethis.QAAutomation.OAuth.Sharing.SharingToLinkedIn">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="ERROR: Element css=span[class*=&apos;st_sharethis&apos;] span.stButton not found">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element css=span[class*='st_sharethis'] span.stButton not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.DefaultSelenium.mouseDown(DefaultSelenium.java:251)
+	at com.sharethis.QAAutomation.commonlib.STCommonLibrary.stClickAndVerify(STCommonLibrary.java:95)
+	at com.sharethis.QAAutomation.commonlib.STLaunchBrowser.stLaunchOauthWidget(STLaunchBrowser.java:206)
+	at com.sharethis.QAAutomation.OAuth.Sharing.SharingToLinkedIn.test_SharingToLinkedIn(SharingToLinkedIn.java:46)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>
