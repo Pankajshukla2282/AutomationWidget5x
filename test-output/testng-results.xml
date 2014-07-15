@@ -4,18 +4,18 @@
   <suite name="Selenium 2">
     <groups>
     </groups>
-    <test name="com.sharethis.QAAutomation.oauthUIandFunctions.WidgetUIVerification">
-      <class name="com.sharethis.QAAutomation.oauthUIandFunctions.WidgetUIVerification">
-        <test-method status="FAIL" signature="CloseBrowser()" name="CloseBrowser" is-config="true" duration-ms="0" started-at="2014-04-04T18:39:16Z" finished-at="2014-04-04T18:39:16Z">
+    <test name="com.sharethis.QAAutomation.OAuth.FastShare.EnableThroughOauthWidget">
+      <class name="com.sharethis.QAAutomation.OAuth.FastShare.EnableThroughOauthWidget">
+        <test-method status="FAIL" signature="CloseBrowser()" name="CloseBrowser" is-config="true" duration-ms="0" started-at="2014-07-11T16:04:23Z" finished-at="2014-07-11T16:04:23Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
 	at com.sharethis.QAAutomation.commonlib.STCommonLibrary.stTearDown(STCommonLibrary.java:62)
-	at com.sharethis.QAAutomation.oauthUIandFunctions.WidgetUIVerification.CloseBrowser(WidgetUIVerification.java:245)
+	at com.sharethis.QAAutomation.OAuth.FastShare.EnableThroughOauthWidget.CloseBrowser(EnableThroughOauthWidget.java:121)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
-	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:417)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:154)
@@ -35,17 +35,17 @@
             </full-stacktrace>
           </exception>
         </test-method>
-        <test-method status="FAIL" signature="test_WidgetUIVerification(int, int, int, int)" name="test_WidgetUIVerification" duration-ms="0" started-at="2014-04-04T18:39:16Z" finished-at="2014-04-04T18:39:16Z">
+        <test-method status="FAIL" signature="test_EnableThroughOauthWidget(int, int, int, int, int, int, int)" name="test_EnableThroughOauthWidget" duration-ms="0" started-at="2014-07-11T16:04:23Z" finished-at="2014-07-11T16:04:23Z">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
-Parameter 'STLBDataID' is required by @Test on method test_WidgetUIVerification
-but has not been marked @Optional or defined in E:\Git 5x\Selenium 2\temp-testng-customsuite.xml]]>
+Parameter 'STLBDataID' is required by @Test on method test_EnableThroughOauthWidget
+but has not been marked @Optional or defined in D:\Selenium 2\temp-testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
-Parameter 'STLBDataID' is required by @Test on method test_WidgetUIVerification
-but has not been marked @Optional or defined in E:\Git 5x\Selenium 2\temp-testng-customsuite.xml
+Parameter 'STLBDataID' is required by @Test on method test_EnableThroughOauthWidget
+but has not been marked @Optional or defined in D:\Selenium 2\temp-testng-customsuite.xml
 	at org.testng.internal.Parameters.createParameters(Parameters.java:119)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:280)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:365)
@@ -69,8 +69,6 @@ but has not been marked @Optional or defined in E:\Git 5x\Selenium 2\temp-testng
 ]]>
             </full-stacktrace>
           </exception>
-        </test-method>
-        <test-method status="SKIP" signature="HTMLReport()" name="HTMLReport" is-config="true" duration-ms="0" started-at="2014-04-04T18:39:16Z" finished-at="2014-04-04T18:39:16Z">
         </test-method>
       </class>
     </test>

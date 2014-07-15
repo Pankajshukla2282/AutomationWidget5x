@@ -969,7 +969,7 @@ public class STSharing {
 			String successmsg = browser.getText(FASTSHARE_DONE_SCREEN);
 			System.out.println("This messgae shoul be appeared" + successmsg);
 			
-			if (successmsg.contains("Your message was succesfully shared!"))
+			if (successmsg.contains("Your message was successfully shared!"))
 			{
 				actVal = 0;
 				break Block;

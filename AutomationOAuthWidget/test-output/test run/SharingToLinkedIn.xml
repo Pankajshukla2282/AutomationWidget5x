@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SharingToLinkedIn" failures="1" tests="1" time="179.187" errors="0">
+<testsuite name="SharingToLinkedIn" failures="1" tests="1" time="414.015" errors="0">
   <properties/>
-  <testcase name="test_SharingToLinkedIn" time="178.969" classname="com.sharethis.QAAutomation.OAuth.Sharing.SharingToLinkedIn">
-    <failure type="com.thoughtworks.selenium.SeleniumException" message="ERROR: Element css=span[class*=&apos;st_sharethis&apos;] span.stButton not found">
-      <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element css=span[class*='st_sharethis'] span.stButton not found
-	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
-	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
-	at com.thoughtworks.selenium.DefaultSelenium.mouseDown(DefaultSelenium.java:251)
-	at com.sharethis.QAAutomation.commonlib.STCommonLibrary.stClickAndVerify(STCommonLibrary.java:95)
-	at com.sharethis.QAAutomation.commonlib.STLaunchBrowser.stLaunchOauthWidget(STLaunchBrowser.java:206)
-	at com.sharethis.QAAutomation.OAuth.Sharing.SharingToLinkedIn.test_SharingToLinkedIn(SharingToLinkedIn.java:46)
+  <testcase name="test_SharingToLinkedIn" time="401.384" classname="com.sharethis.QAAutomation.OAuth.Sharing.SharingToLinkedIn">
+    <failure type="junit.framework.ComparisonFailure" message="null expected:&lt;[PASS]&gt; but was:&lt;[FAIL]&gt;">
+      <![CDATA[junit.framework.ComparisonFailure: null expected:<[PASS]> but was:<[FAIL]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.sharethis.QAAutomation.commonlib.STCommonLibrary.stVerifyObjects(STCommonLibrary.java:165)
+	at com.sharethis.QAAutomation.commonlib.STSharing.stLinkedInSharingVerification(STSharing.java:873)
+	at com.sharethis.QAAutomation.OAuth.Sharing.SharingToLinkedIn.test_SharingToLinkedIn(SharingToLinkedIn.java:69)
 ... Removed 22 stack frames]]>
     </failure>
   </testcase>

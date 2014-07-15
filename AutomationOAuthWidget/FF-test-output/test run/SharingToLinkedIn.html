@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Feb 12 21:34:16 IST 2014</td>
+<td>Started on:</td><td>Tue Jul 15 12:56:45 IST 2014</td>
 </tr>
-<tr><td>Total time:</td><td>179 seconds (179187 ms)</td>
+<tr><td>Total time:</td><td>414 seconds (414015 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,33 +75,39 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.sharethis.QAAutomation.OAuth.Sharing.SharingToLinkedIn.test_SharingToLinkedIn()'>test_SharingToLinkedIn<br/><b>Parameters:</b> 1, 0, 6, 0, 14, 9, 0<br/>
-<a href="#Output-14452459" onClick='toggleBox("Output-14452459", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-6175092" onClick='toggleBox("Output-6175092", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-14452459" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-14452459">
-<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stLaunch-Open Browser and launch Portal URL [PASS]</strong><br />Successfully launch Publishers Page.<br /><strong>Data used:</strong><br />{BrowserType=*firefox, Port=4444, targetXPath=css=span[class*='st_sharethis'] span.stButton, verifyXpath=css=div#outercontainer div#main span#popular.popular, WindowTitle=Bad Parking, URL=http://picaphobia.com/picture/873/bad-parking/, Localhost=localhost}</div><br/>
+<a href="#Output-6175092" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-6175092">
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stLaunch-Open Browser and launch Portal URL [PASS]</strong><br />Successfully launch Publishers Page.<br /><strong>Data used:</strong><br />{BrowserType=*firefox, Port=4444, WindowTitle=TODAY ONLY ALPS Mountaineering Camp Chair $44.73, URL=http://www.techbargains.com/news_displayItem.cfm/407558, Localhost=localhost}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stClickAndVerify-Function for click on element and verify up-coming element [PASS]</strong><br />Getting upcoming object successfully.<br /><strong>Data used:</strong><br />{targetXPath=css=span[class*='st_sharethis'] span.stButton, verifyXpath=css=div#outerContainer>h2#welcomeMsg}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stLaunchOauthWidget-Launch ShareThis OAuth Widget [PASS]</strong><br />OAuth Widget is Successfully launch.<br /><strong>Data used:</strong><br />{}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stVerifyObjects-Function for verification of objects [PASS]</strong><br />Getting corresponding object successfully.<br /><strong>Data used:</strong><br />{<div><strong>targetXPath1</strong></div>=css=div#serviceCTAs.sts-cb>div#services>a.serviceDisplay.checked:nth-child(4)<div><strong> -- PASS</strong></div>, <div><strong>targetXPath0</strong></div>=css=div#outerContainer>h2#welcomeMsg<div><strong> -- PASS</strong></div>}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stOAuthLinkedinAccount-function is used to sign in as LinkedIn account via OAuth. [PASS]</strong><br />User is successfully signed in with LinkedIn Account on OAuth widget.<br /><strong>Data used:</strong><br />{}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stClickAndVerify-Function for click on element and verify up-coming element [PASS]</strong><br />Getting upcoming object successfully.<br /><strong>Data used:</strong><br />{targetXPath=css=a#shareButton.ctaButton, verifyXpath=css=div#outerContainer div#mainBody div#doneScreen:not(.sts-dn)}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stVerifySharedToText-This function is used to verify 'shared to' text on done screen of OAuth Widget. [PASS]</strong><br />Shared to text is correct for LinkedIn share<br /><strong>Data used:</strong><br />{}</div><br/>
+<div style =" background-color:#FDFF10;color:green;"><strong>ST_DS_05--->PASS</strong></div><br/>
+<br /><div style ="background-color:#EDEDA9;color:red;"><strong>stVerifyObjects-Function for verification of objects [FAIL]<br />Expected is 'Getting corresponding object successfully.'but in actual 'Not getting corresponding object successfully.'<br />Data used:<br />{<div><strong>targetXPath0</strong></div>=css=div.feed-content div.share-object p.share-title a<div><strong> -- FAIL --> Shared Title is not present</strong></div>}</strong></div><br/>
 </div>
 </td>
-<td>178</td>
-<td><div><pre>com.thoughtworks.selenium.SeleniumException: ERROR: Element css=span[class*='st_sharethis'] span.stButton not found
-	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
-	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
-	at com.thoughtworks.selenium.DefaultSelenium.mouseDown(DefaultSelenium.java:251)
-	at com.sharethis.QAAutomation.commonlib.STCommonLibrary.stClickAndVerify(STCommonLibrary.java:95)
-	at com.sharethis.QAAutomation.commonlib.STLaunchBrowser.stLaunchOauthWidget(STLaunchBrowser.java:206)
-	at com.sharethis.QAAutomation.OAuth.Sharing.SharingToLinkedIn.test_SharingToLinkedIn(SharingToLinkedIn.java:46)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace14452459", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace14452459'><pre>com.thoughtworks.selenium.SeleniumException: ERROR: Element css=span[class*='st_sharethis'] span.stButton not found
-	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
-	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
-	at com.thoughtworks.selenium.DefaultSelenium.mouseDown(DefaultSelenium.java:251)
-	at com.sharethis.QAAutomation.commonlib.STCommonLibrary.stClickAndVerify(STCommonLibrary.java:95)
-	at com.sharethis.QAAutomation.commonlib.STLaunchBrowser.stLaunchOauthWidget(STLaunchBrowser.java:206)
-	at com.sharethis.QAAutomation.OAuth.Sharing.SharingToLinkedIn.test_SharingToLinkedIn(SharingToLinkedIn.java:46)
+<td>401</td>
+<td><div><pre>junit.framework.ComparisonFailure: null expected:&lt;[PASS]&gt; but was:&lt;[FAIL]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.sharethis.QAAutomation.commonlib.STCommonLibrary.stVerifyObjects(STCommonLibrary.java:165)
+	at com.sharethis.QAAutomation.commonlib.STSharing.stLinkedInSharingVerification(STSharing.java:873)
+	at com.sharethis.QAAutomation.OAuth.Sharing.SharingToLinkedIn.test_SharingToLinkedIn(SharingToLinkedIn.java:69)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace6175092", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace6175092'><pre>junit.framework.ComparisonFailure: null expected:&lt;[PASS]&gt; but was:&lt;[FAIL]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.sharethis.QAAutomation.commonlib.STCommonLibrary.stVerifyObjects(STCommonLibrary.java:165)
+	at com.sharethis.QAAutomation.commonlib.STSharing.stLinkedInSharingVerification(STSharing.java:873)
+	at com.sharethis.QAAutomation.OAuth.Sharing.SharingToLinkedIn.test_SharingToLinkedIn(SharingToLinkedIn.java:69)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
-	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:607)

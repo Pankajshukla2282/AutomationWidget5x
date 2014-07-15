@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="EnableThroughOauthWidget" failures="1" tests="1" time="95.548" errors="0">
+<testsuite name="EnableThroughOauthWidget" failures="1" tests="1" time="452.191" errors="0">
   <properties/>
-  <testcase name="test_EnableThroughOauthWidget" time="95.243" classname="com.sharethis.QAAutomation.OAuth.FastShare.EnableThroughOauthWidget">
-    <failure type="junit.framework.ComparisonFailure" message="null expected:&lt;[PASS]&gt; but was:&lt;[FAIL]&gt;">
-      <![CDATA[junit.framework.ComparisonFailure: null expected:<[PASS]> but was:<[FAIL]>
-	at junit.framework.Assert.assertEquals(Assert.java:81)
-	at junit.framework.Assert.assertEquals(Assert.java:87)
-	at com.sharethis.QAAutomation.commonlib.STCommonLibrary.stClickAndVerify(STCommonLibrary.java:114)
-	at com.sharethis.QAAutomation.commonlib.STLaunchBrowser.stLaunchOauthWidget(STLaunchBrowser.java:206)
-	at com.sharethis.QAAutomation.OAuth.FastShare.EnableThroughOauthWidget.test_EnableThroughOauthWidget(EnableThroughOauthWidget.java:52)
+  <testcase name="test_EnableThroughOauthWidget" time="452.165" classname="com.sharethis.QAAutomation.OAuth.FastShare.EnableThroughOauthWidget">
+    <failure type="junit.framework.AssertionFailedError" message="expected:&lt;1&gt; but was:&lt;0&gt;">
+      <![CDATA[junit.framework.AssertionFailedError: expected:<1> but was:<0>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:277)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:195)
+	at junit.framework.Assert.assertEquals(Assert.java:201)
+	at com.sharethis.QAAutomation.commonlib.STCommonLibrary.stTearDown(STCommonLibrary.java:64)
+	at com.sharethis.QAAutomation.OAuth.FastShare.EnableThroughOauthWidget.test_EnableThroughOauthWidget(EnableThroughOauthWidget.java:113)
 ... Removed 22 stack frames]]>
     </failure>
   </testcase>

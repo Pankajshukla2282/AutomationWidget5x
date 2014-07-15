@@ -107,7 +107,9 @@ public class CommonXPath extends TestCase {
     public static String SIGNIN_GOOGLE_SIGNIN_BUTTON = "css=div.main div.card form#gaia_loginform input#signIn.rc-button";
     public static String SIGNIN_GOOGLE_TO_FIELD = "//*[@id=':op']";
     public static String SIGNIN_GOOGLE_SUBJECT_FIELD = "//*[@id=':p3']";
-    public static String SIGNIN_GOOGLE_MESSAGE_BODY = "//*[@id=':nx']";
+    //public static String SIGNIN_GOOGLE_MESSAGE_BODY = "//*[@id=':nx']";
+    //public static String SIGNIN_GOOGLE_MESSAGE_BODY = "//div[@id=':o2']/iframe";
+    public static String SIGNIN_GOOGLE_MESSAGE_BODY =  "//td[2]/div[2]/div/iframe";
     public static String SIGNIN_GOOGLE_SEND_BUTTON = "//*[@id=':pd']";
         
   //*****************TWITTER SIGN IN PAGE********************
@@ -162,8 +164,10 @@ public class CommonXPath extends TestCase {
     
     public static String SIGNIN_YAHOO_TO_FIELD="//*[@id='to-field']";
     public static String SIGNIN_YAHOO_SUBJECT_FIELD="//*[@id='subject-field']";
-    public static String SIGNIN_YAHOO_MESSAGE_BODY="//html/body/p[2]";
-    public static String SIGNIN_YAHOO_SEND_BUTTON="//div[6]/div[2]/div[2]/div/span[2]/a[text()='Send']";
+    //public static String SIGNIN_YAHOO_MESSAGE_BODY="//html/body/p[2]";
+    public static String SIGNIN_YAHOO_MESSAGE_BODY="//div[6]/div[3]/div[4]/div[2]/div[6]/div/table/tbody/tr[2]/td/div/div/div[2]";
+    //public static String SIGNIN_YAHOO_SEND_BUTTON="//div[6]/div[2]/div[2]/div/span[2]/a[text()='Send']";
+    public static String SIGNIN_YAHOO_SEND_BUTTON="//div[6]/div[3]/div[4]/div[2]/div[6]/div/table/tbody/tr[3]/td/div[2]/span[1]";
     
     public static String SIGNIN_YAHOO_USERNAME_NEW = "css=form#login_form div#inputs.yui-skin-sam input#username";
     public static String SIGNIN_YAHOO_PASSWORD_NEW = "css=form#login_form div#inputs.yui-skin-sam input#passwd";
@@ -298,10 +302,14 @@ public class CommonXPath extends TestCase {
     public static String SIGNIN_OUTLOOK_PASSWORD = "css=div#mainTD.center div#signInTD.floatLeft div.floatLeft div#rightTD form div.section div#idDiv_PWD_PasswordTb.row div input#i0118";
     public static String SIGNIN_OUTLOOK_SIGNIN_BUTTON = "css=div#signInTD.floatLeft div.floatLeft div#rightTD form div#idTd_PWD_SubmitCancelTbl.section input#idSIButton9.default";
     
-    public static String SIGNIN_OUTLOOK_TO_FIELD = "css=div#ComposeContentWrapper.sc div div#ComposeArea div#composeHeader.ComposeHeader div.Row div#toCP.t_cpv2 div.cp_inputContainer div.cp_inputArea span.cp_awe input.cp_primaryInput";
-    public static String SIGNIN_OUTLOOK_SUBJECT_FIELD = "css=div#ComposeContentWrapper.sc div div#ComposeArea div#ComposeContent div#ComposeContentHeader div.Subject div.SubjectArea input#fSubject.t_subj";
-    public static String SIGNIN_OUTLOOK_MESSAGE_BODY = "css=div#ComposeContentWrapper.sc div div#ComposeArea div#ComposeContent div#composeMessage.ComposeMessage div#ComposeRteEditor.RteEditor";
-    public static String SIGNIN_OUTLOOK_SEND_BUTTON = "css=div#HeaderContainer div#c_header.c_hb div#c_cb0.c_c ul.c_cc li a#SendMessage";
+    //public static String SIGNIN_OUTLOOK_TO_FIELD = "css=div#ComposeContentWrapper.sc div div#ComposeArea div#composeHeader.ComposeHeader div.Row div#toCP.t_cpv2 div.cp_inputContainer div.cp_inputArea span.cp_awe input.cp_primaryInput";
+    public static String SIGNIN_OUTLOOK_TO_FIELD = "css=div.cp_inputContainer div.cp_inputArea.t_srbgc.t_sr_bordc.Focus span.cp_awe.cp_input textarea.cp_primaryInput.cp_anyInput.t_urtc";
+    //public static String SIGNIN_OUTLOOK_SUBJECT_FIELD = "css=div#ComposeContentWrapper.sc div div#ComposeArea div#ComposeContent div#ComposeContentHeader div.Subject div.SubjectArea input#fSubject.t_subj";
+    public static String SIGNIN_OUTLOOK_SUBJECT_FIELD = "css=div.Subject div.SubjectArea.TextLightI input#fSubject.t_subj.TextLightI.WatermarkedInput";
+    //public static String SIGNIN_OUTLOOK_MESSAGE_BODY = "css=div#ComposeContentWrapper.sc div div#ComposeArea div#ComposeContent div#composeMessage.ComposeMessage div#ComposeRteEditor.RteEditor";
+    public static String SIGNIN_OUTLOOK_MESSAGE_BODY = "css=div#ComposeArea div#ComposeContent div#composeMessage.ComposeMessage.slideOnResize.carouselSmooth div#ComposeRteEditor.RteEditor";
+    //public static String SIGNIN_OUTLOOK_SEND_BUTTON = "css=div#HeaderContainer div#c_header.c_hb div#c_cb0.c_c ul.c_cc li a#SendMessage";
+    public static String SIGNIN_OUTLOOK_SEND_BUTTON = "css=div.AppContainer div#m_wh div#c_header.c_hb.c_hncb div#c_cb0.c_c.t_hdbg.c_cd.c_c8.c_clt ul.c_cc li a#SendMessage";
     
 
 }
