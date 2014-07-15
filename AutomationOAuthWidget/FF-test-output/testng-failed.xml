@@ -1,25 +1,21 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="5" skipfailedinvocationCounts="false" verbose="1" name="Failed suite [test run]" junit="false" annotations="JDK">
-  <parameter name="STPExpVal" value="0"/>
   <parameter name="STLBDataID" value="1"/>
-  <parameter name="STLDataID" value="6"/>
+  <parameter name="STLDataID" value="16"/>
   <parameter name="STLBExpVal" value="0"/>
-  <parameter name="STBCDataID" value="14"/>
-  <parameter name="STLExpVal" value="0"/>
-  <parameter name="STPDataID" value="9"/>
-  <test name="SharingToLinkedIn(failed)" junit="false" annotations="JDK">
-    <parameter name="STPExpVal" value="0"/>
-    <parameter name="STLDataID" value="6"/>
+  <parameter name="STBCDataID" value="1"/>
+  <parameter name="STLExpVal" value="2"/>
+  <test name="WidgetSignInWithYahooAccount(failed)" junit="false" annotations="JDK">
+    <parameter name="STLDataID" value="16"/>
     <parameter name="STLBDataID" value="1"/>
     <parameter name="STLBExpVal" value="0"/>
-    <parameter name="STBCDataID" value="14"/>
-    <parameter name="STLExpVal" value="0"/>
-    <parameter name="STPDataID" value="9"/>
+    <parameter name="STBCDataID" value="1"/>
+    <parameter name="STLExpVal" value="2"/>
     <classes>
-      <class name="com.sharethis.QAAutomation.OAuth.Sharing.SharingToLinkedIn">
+      <class name="com.sharethis.QAAutomation.SignInWidget.WidgetSignInWithYahooAccount">
         <methods>
           <include name="CloseBrowser"/>
-          <include name="test_SharingToLinkedIn"/>
+          <include name="test_WidgetSignInWithYahooAccount"/>
         </methods>
       </class>
     </classes>

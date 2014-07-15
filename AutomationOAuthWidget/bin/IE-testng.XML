@@ -1,14 +1,16 @@
 <!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
 <suite name="test run">
 
-	<test name="WidgetSignInWithYahooAccount">
+	<test name="SendEmailViaOutlookEmailService">
 		<classes> 
 			<parameter name="STLBExpVal" value="0"/>
-			<parameter name="STLDataID" value="16"/>
-			<parameter name="STLExpVal" value="2"/>
-			<parameter name="STBCDataID" value="1"/>
+			<parameter name="STLDataID" value="17"/>
+			<parameter name="STLExpVal" value="0"/>
+			<parameter name="STEEDataID" value="3"/>
+			<parameter name="STEEExpVal" value="0"/>
+			<parameter name="STBCDataID" value="21"/>
 			<parameter name="STLBDataID" value="3"/>
-			<class name="com.sharethis.QAAutomation.SignInWidget.WidgetSignInWithYahooAccount"/>
+			<class name="com.sharethis.QAAutomation.OAuth.Email.SendEmailViaOutlookEmailService"/>
 		</classes> 
 	</test> 
 

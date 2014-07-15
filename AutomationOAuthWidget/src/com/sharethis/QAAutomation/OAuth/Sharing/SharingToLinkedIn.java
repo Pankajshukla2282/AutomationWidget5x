@@ -61,6 +61,11 @@ public class SharingToLinkedIn {
 		comLib.stClickAndVerify(OAUTH_WIDGET_SHARE_BUTTON, OAUTH_WIDGET_DONE_SCREEN, 0, "");
 		
 		/* Verifying 'Shared To' Text on Done screen */
+		try {
+			Thread.sleep(300000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		status=stDoneScreen.stVerifySharedToText("LinkedIn",3, "");
 		System.out.println(" ST_DS_05 : " +status);
 		comLib.stLogResult(status, "ST_DS_05", "", red);

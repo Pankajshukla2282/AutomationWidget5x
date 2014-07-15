@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="WidgetSignInWithYahooAccount" failures="0" tests="1" time="306.313" errors="0">
+<testsuite name="WidgetSignInWithYahooAccount" failures="1" tests="1" time="274.642" errors="0">
   <properties/>
-  <testcase name="test_WidgetSignInWithYahooAccount" time="306.302" classname="com.sharethis.QAAutomation.SignInWidget.WidgetSignInWithYahooAccount"/>
+  <testcase name="test_WidgetSignInWithYahooAccount" time="265.078" classname="com.sharethis.QAAutomation.SignInWidget.WidgetSignInWithYahooAccount">
+    <failure type="java.lang.NullPointerException">
+      <![CDATA[java.lang.NullPointerException
+	at com.sun.org.apache.xerces.internal.dom.DeepNodeListImpl.nextMatchingElementAfter(Unknown Source)
+	at com.sun.org.apache.xerces.internal.dom.DeepNodeListImpl.item(Unknown Source)
+	at com.sharethis.QAAutomation.commonlib.STFunctionLibrary.stEndResult(STFunctionLibrary.java:196)
+	at com.sharethis.QAAutomation.commonlib.STCommonLibrary.stLogResult(STCommonLibrary.java:190)
+	at com.sharethis.QAAutomation.SignInWidget.WidgetSignInWithYahooAccount.test_WidgetSignInWithYahooAccount(WidgetSignInWithYahooAccount.java:56)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
 </testsuite>
