@@ -2334,12 +2334,16 @@ return returnVal;
     
     if(stNewWindowTitle.contains(confirmationtitle))
     {
+    	System.out.println(stNewWindowTitle);
+    	System.out.println(confirmationtitle);
         actVal= 0; /* Sign in successful with given username */
         break Block;
     }
     else
     {
-        actVal= 1; /* Username is incorrect */
+    	System.out.println(stNewWindowTitle);
+    	System.out.println(confirmationtitle);
+    	actVal= 1; /* Username is incorrect */
         break Block;
     } 
     	
