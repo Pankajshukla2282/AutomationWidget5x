@@ -13,13 +13,9 @@
 <PASS/>
 <FAIL/>
 </UIDonescreen>
-<CreateAccountAndSignin PASS="0" FAIL="0" SKIP="17">
+<CreateAccountAndSignin PASS="0" FAIL="0" SKIP="13">
 <SKIP>
-<ST_CAW_02/>
 <ST_CAW_03/>
-<ST_CAW_04/>
-<ST_SIW_04/>
-<ST_SIW_05/>
 <ST_CAW_01/>
 <ST_SIW_02/>
 <ST_SIW_03/>
